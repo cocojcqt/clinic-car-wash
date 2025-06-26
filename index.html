@@ -3,148 +3,142 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Clinic Car Wash - Nettoyage Auto à Pontcharra</title>
-  <meta name="description" content="Clinic Car Wash - Nettoyage intérieur / extérieur, rénovation des phares et diagnostic auto à domicile autour de Pontcharra (38530).">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Clinic Car Wash - Nettoyage Auto à Domicile</title>
+  <meta name="description" content="Nettoyage auto intérieur/extérieur, rénovation des phares et diagnostic à domicile autour de Pontcharra.">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
       font-family: 'Montserrat', sans-serif;
-      background-color: #ffffff;
+      background: #ffffff;
       color: #222;
+      scroll-behavior: smooth;
     }
     header {
-      background: #00aaff;
-      color: white;
       text-align: center;
       padding: 2rem 1rem 1rem;
+      background-color: #00aaff;
+      color: white;
     }
     header img {
-      max-width: 250px;
-      width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
+      max-width: 260px;
     }
-    h1 {
-      font-size: 2rem;
-      margin: 0 0 0.5rem;
+    .intro {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    .intro img {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+    .btn {
+      display: inline-block;
+      margin-top: 1rem;
+      background-color: #00aaff;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
     }
     h2 {
       color: #00aaff;
     }
-    section {
-      padding: 2rem;
-      max-width: 900px;
-      margin: auto;
-    }
     .prestations {
-      display: flex;
-      flex-direction: column;
+      display: grid;
       gap: 1rem;
     }
     .prestation {
       background: #f5faff;
       border-left: 5px solid #00aaff;
       padding: 1rem;
-      border-radius: 10px;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 3rem;
-    }
-    .btn {
-      display: inline-block;
-      margin: 1rem 0.5rem;
-      padding: 0.8rem 1.5rem;
-      background: #00aaff;
-      color: white;
-      text-decoration: none;
       border-radius: 8px;
-      font-weight: bold;
     }
     form {
-      max-width: 500px;
-      margin: 2rem auto;
-      text-align: left;
+      margin-top: 2rem;
     }
     input, textarea {
       width: 100%;
       padding: 0.8rem;
-      margin-bottom: 1rem;
+      margin: 0.5rem 0;
+      border-radius: 6px;
       border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
     }
     button {
       background-color: #00aaff;
       color: white;
       border: none;
-      padding: 0.8rem 1.5rem;
-      border-radius: 8px;
+      padding: 0.8rem 2rem;
+      border-radius: 6px;
       font-weight: bold;
       cursor: pointer;
     }
+    .contact-links a {
+      display: inline-block;
+      margin: 0.5rem;
+      background-color: #00aaff;
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 6px;
+      text-decoration: none;
+    }
     footer {
       text-align: center;
-      background: #f0f0f0;
+      background-color: #f0f0f0;
       padding: 1rem;
-      font-size: 0.9rem;
-    }
-    @media (max-width: 600px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      section {
-        padding: 1rem;
-      }
-      header img {
-        max-width: 180px;
-      }
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="logo.png" alt="Logo Clinic Car Wash" />
-    <h1>Clinic Car Wash</h1>
-    <p>Le soin de votre véhicule à domicile</p>
-  </header>
 
-  <section>
-    <h2>Nos prestations à domicile autour de Pontcharra (38530)</h2>
-    <div class="prestations">
-      <div class="prestation">
-        <strong>Nettoyage intérieur complet</strong> – 115€
-      </div>
-      <div class="prestation">
-        <strong>Nettoyage extérieur complet</strong> – 50€
-      </div>
-      <div class="prestation">
-        <strong>Diagnostic automobile</strong> – 25€
-      </div>
-      <div class="prestation">
-        <strong>Rénovation des optiques de phares</strong> – Prix sur demande
-      </div>
+<header>
+  <img src="logo.png" alt="Logo Clinic Car Wash">
+  <h1>Clinic Car Wash</h1>
+  <p>Le soin de votre véhicule à domicile</p>
+</header>
+
+<div class="intro">
+  <img src="flyer.png" alt="Rénovation des phares - Avant / Après">
+  <br>
+  <a href="#prestations" class="btn">🚗 Découvrir nos prestations</a>
+</div>
+
+<section id="prestations">
+  <h2>Nos prestations à domicile</h2>
+  <div class="prestations">
+    <div class="prestation"><strong>Nettoyage intérieur complet</strong><br>Un nettoyage minutieux de l’habitacle : sièges, moquettes, plastiques. <br><strong>115€</strong></div>
+    <div class="prestation"><strong>Nettoyage extérieur complet</strong><br>Lavage, jantes, finition à la main, sans rayures. <br><strong>50€</strong></div>
+    <div class="prestation"><strong>Diagnostic automobile</strong><br>Lecture de codes défauts avec appareil pro. <br><strong>25€</strong></div>
+    <div class="prestation"><strong>Rénovation des optiques de phares</strong><br>Rendu comme neuf pour votre sécurité et le contrôle technique. <br><strong>Sur devis</strong></div>
+  </div>
+
+  <div class="contact">
+    <h2>Contact</h2>
+    <div class="contact-links">
+      <a href="tel:0678939330">📞 Appeler</a>
+      <a href="https://wa.me/33678939330">💬 WhatsApp</a>
     </div>
+    <form action="https://formsubmit.co/ccarnj@gmail.com" method="POST">
+      <input type="text" name="nom" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
 
-    <div class="contact">
-      <h2>Contactez-nous</h2>
-      <a href="tel:0678939330" class="btn">📞 Appeler</a>
-      <a href="https://wa.me/33678939330" class="btn">💬 WhatsApp</a>
-      <p>Ou envoyez-nous un message via le formulaire ci-dessous :</p>
-      
-      <form action="https://formsubmit.co/ccarnj@gmail.com" method="POST">
-        <input type="text" name="nom" placeholder="Votre nom" required>
-        <input type="email" name="email" placeholder="Votre email" required>
-        <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
-    </div>
-  </section>
+<footer>
+  © 2025 Clinic Car Wash – Nettoyage auto à domicile | Pontcharra (38530) et alentours
+</footer>
 
-  <footer>
-    © 2025 Clinic Car Wash – Nettoyage auto à domicile | Pontcharra et alentours
-  </footer>
 </body>
 </html>
